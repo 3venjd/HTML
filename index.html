@@ -5,8 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table,th,td {
+            border: 1px solid black
+        }
+        table{
+            width: 500px;
+        }
+    </style>
 </head>
 <body>
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>hot big soup</td>
+                <td>4320</td>
+            </tr>
+            <tr>
+                <td>Pencil</td>
+                <td>1000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 5320</td>
+        </tfoot>
+    </table>
+    <!--Not sorted list-->
+    <ul>
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+        <li>Element 5</li>
+    </ul>
+
+    <!--Sorted list-->
+    <ol>
+        <li value="3">Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+        <li>Element 5</li>
+        <li>
+            <ol>
+                <li style="list-style-type:lower-latin;">sub Element 1</li>
+                <li style="list-style-type: lower-latin;">sub Element 2</li>
+                <li style="list-style-type: lower-latin;">sub Element 3</li>
+            </ol>
+        </li>
+    </ol>
+
     <!-- esto es para comentar -->
     <h1>Hello world!</h1>
     <p>
@@ -21,5 +76,24 @@
     <a target="_blank" href="https://www.google.com/">Go to Google</a>
     <br>
     <img src="Img\astronauta.png" width="200" height="200" alt="">
+    <form action="">
+        <!--For is the focus when click the label-->
+        <label for="nombre">Nombre </label>
+        <!--name is the id to relate with the server-->
+        <input id="nombre" type="text" name="nombre" placeholder="Nombre">
+        <br>
+        <label for="apellido">Apellido</label>
+        <input id="apellido" type="text" placeholder="Apellido">
+        <br>
+        <label for="comentario">Comentario</label>
+        <br>
+        <textarea name="comentario" id="comentario" cols="20" rows="10"></textarea>
+        <br>
+        <!--<input type="submit">-->
+        <br>
+        <button type="button">Tipo Boton</button>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
